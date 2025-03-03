@@ -237,7 +237,7 @@ class GiocoMatematico {
         }
 
         int livello = 1; // Inizializzazione del livello
-        while (livello < 4) { // Ciclo per i livelli
+        while (livello <= 3) { // Ciclo per i livelli
             if (utente.getPunti() < punteggiMinimi[livello - 1]) { // Controllo dei punti minimi per il livello
                 System.out.println("Devi avere almeno " + punteggiMinimi[livello - 1]
                         + " punti per accedere al livello " + livello + "!"); // Messaggio di punti insufficienti
